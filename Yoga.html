@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- saved from url=(0088)https://vatsalshreekant.github.io/Computer-Vision-AI-Human-Pose-Estimation/practice.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./Yoga_files/style.css">
+
+    <title>Yoga</title>
+
+    <script src="./Yoga_files/ml5.min.js.download" type="text/javascript"></script><style type="text/css" data-glamor=""></style>
+    <script src="./Yoga_files/p5.js.download"></script>
+    <script src="./Yoga_files/p5.dom.js.download"></script>
+    <script src="./Yoga_files/p5.sound.js.download"></script>
+  </head>
+
+
+
+  <body>
+    <div class="yoga-header">
+      <h1>Yoga Session</h1>
+      <!-- <h2 class="currentPose"></h2> -->
+      <h2>Press start to begin yoga session</h2>
+    </div>
+
+    <div class="grid-container">
+      <div class="sketch-holder" id="sketch-holder">
+        <!-- scripts -->
+        <script src="./Yoga_files/jquery.min.js.download"></script>
+        <script src="./Yoga_files/yoga.js.download"></script>
+      </div>
+      <div class="trainer" id="trainer">
+        <div>
+          <h1 id="time-remaining">Starting in: 5s</h1>
+        </div>
+        <div>
+          <h2>Reference Yoga Trainer:</h2>
+        </div>
+        <div class="trainer-model">
+          <img class="trainer-img" src="./Yoga_files/mountain.svg">
+        </div>
+      </div>
+      <div class="feedback" id="feedback">
+        <h2 class="feedback-header">Feedback for user:</h2>
+        <h3 class="score">User Pose Accuracy:</h3>
+        <p class="accuracy" id="accuracy">0 %</p> <br>
+        <h3 class="score">User Pose Average Accuracy:</h3>
+
+        <p class="percent_accuracy" id="percent_accuracy"></p>
+
+        <p class="feedback-description">Individual Calculated Angles</p>
+        <table>
+          <tbody><tr>
+            <th>Targetted Joints</th>
+            <th>Angle formed by left joints</th>
+            <th>Angle formed by right joints</th>
+          </tr>
+          <tr>
+            <td>Knee, Ankle, Hip</td>
+            <td id="left-0">∠ 0</td>
+            <td id="right-1">∠ 0</td>
+          </tr>
+          <tr>
+            <td>Hip, Knee, Shoulder</td>
+            <td id="left-2">∠ 0</td>
+            <td id="right-3">∠ 0</td>
+          </tr>
+          <tr>
+            <td>Shoulder, Hip, Elbow</td>
+            <td id="left-4">∠ 0</td>
+            <td id="right-5">∠ 0</td>
+          </tr>
+          <tr>
+            <td>Elbow, Shoulder, Wrist</td>
+            <td id="left-6">∠ 0</td>
+            <td id="right-7">∠ 0</td>
+          </tr>
+          <tr>
+            <td>Shoulder, Ankle, Wrist</td>
+            <td id="left-8">∠ 0</td>
+            <td id="right-9">∠ 0</td>
+          </tr>
+          <tr>
+            <td>Shoulder, Knee, Wrist</td>
+            <td id="left-10">∠ 0</td>
+            <td id="right-11">∠ 0</td>
+          </tr>
+          <tr>
+            <td>Shoulder, Hip, Wrist</td>
+            <td id="left-12">∠ 0</td>
+            <td id="right-13">∠ 0</td>
+          </tr>
+        </tbody></table>
+      </div>
+    </div>
+
+    <div class="homepage-btn">
+      <a href="https://vatsalshreekant.github.io/Computer-Vision-AI-Human-Pose-Estimation/practice.html#" class="button" id="start-btn">Start</a>
+      <!-- <a href="index.html" class="button">Homepage</a> -->
+      <a href="https://vatsalshreekant.github.io/Computer-Vision-AI-Human-Pose-Estimation/pickPose.html" class="button">Back</a>
+    
+
+    </div>
+
+
+  
+
+  <footer>© Copyright 2022. By Pune University.</footer>
+
+<video crossorigin="anonymous" width="2800" height="2600" style="display: none; width: 2800px; height: 2600px;"></video></body></html>
